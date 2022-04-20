@@ -1,0 +1,1638 @@
+@font-face {
+    font-family: 'Manrope';
+    src: url('/fonts/Manrope-Medium.eot');
+    src: url('/fonts/Manrope-Medium.eot') format('embedded-opentype'), url('/fonts/Manrope-Medium.woff2') format('woff2'), url('/fonts/Manrope-Medium.woff') format('woff'), url('/fonts/Manrope-Medium.svg') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Serif';
+    src: url('/fonts/IBMPlexSerif-Bold.eot');
+    src: url('/fonts/IBMPlexSerif-Bold.eot') format('embedded-opentype'), url('/fonts/IBMPlexSerif-Bold.otf') format('opentype'), url('/fonts/IBMPlexSerif-Bold.ttf') format('truetype'), url('/fonts/IBMPlexSerif-Bold.woff') format('woff'), url('/fonts/IBMPlexSerif-Bold.svg') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*------Обнуление--------*/
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+    font-family: inherit;
+}
+
+/*------Имитация основной страницы-------*/
+
+.wrapperz {
+    min-height: 100%;
+    overflow: hidden;
+    background-color: rgba(251, 251, 251, 1);
+}
+
+/*------Активации - круги-------*/
+
+.containerz {
+    max-width: 1160px;
+    margin: 40px auto;
+    padding: 0 15px;
+    box-sizing: content-box;
+    background-color: rgba(251, 251, 251, 1);
+}
+
+.activationz-three, .activationz-two {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 65px;
+}
+
+.activationz-three {
+    padding: 35px 155px 20px 155px;
+}
+
+.activationz-two {
+    padding: 25px 300px 70px 300px;
+}
+
+.activationz__item {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(238px, 1fr));
+    grid-template-rows: auto minmax(48px, 1fr);
+    justify-items: center;
+    align-items: start;
+}
+
+.itemz__image {
+    position: relative;
+    width: 175px;
+    height: 175px;
+}
+
+.itemz__image img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+}
+
+.itemz__text {
+    font-family: 'Manrope';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 152%;
+    text-align: center;
+    color: #323556;
+    opacity: 0.8;
+    padding: 10px 5px;
+}
+
+@media (max-width: 1199px) {
+    .activationz-three, .activationz-two {
+        display: grid;
+        grid-auto-flow: row;
+        row-gap: 20px;
+        padding: 20px 35px 10px 40px;
+    }
+
+    .activationz-two {
+        padding-top: 10px;
+        padding-bottom: 40px;
+    }
+
+    .activationz__item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+    }
+
+    .itemz__image {
+        position: relative;
+        width: 60px;
+        height: 60px;
+        justify-self: end;
+    }
+
+    .itemz__image img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .itemz__text {
+        font-size: 10px;
+        line-height: 135.5%;
+        text-align: start;
+        padding: 10px 20px;
+        justify-self: start;
+    }
+}
+
+/*------Активации - карточки-------*/
+
+.activationz {
+    max-width: 1160px;
+    margin: 40px auto;
+    padding: 0 15px;
+    box-sizing: content-box;
+    background-color: rgba(251, 251, 251, 1);
+}
+
+.activationz__title {
+    font-family: Manrope;
+    font-weight: 700;
+    color: #FE7F5E;
+    font-size: 16px;
+    line-height: 152%;
+    margin-bottom: 10px;
+}
+
+.activationz__description {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.descriptionz__title {
+    font-family: "IBM Plex Serif";
+    font-weight: 700;
+    color: #323556;
+    font-size: 40px;
+    line-height: 152%;
+    margin-bottom: 5px;
+}
+
+.descriptionz__text {
+    font-family: Manrope;
+    font-weight: 500;
+    opacity: 0.8;
+    color: #323556;
+    font-size: 16px;
+    line-height: 152%;
+}
+
+.activationz__cards {
+    display: grid;
+    grid-gap: 40px;
+    grid-auto-flow: column;
+    margin: 20px 0;
+}
+
+.activationz__card {
+    background-color: #FDF1E1;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template: auto auto 1fr auto / 1fr;
+    justify-items: center;
+}
+
+.cardz__image {
+    margin: 0 auto;
+    padding: 50px 0 25px 0;
+}
+
+.cardz__title {
+    font-family: "IBM Plex Serif";
+    font-weight: 700;
+    color: #323556;
+    font-size: 24px;
+    line-height: 152%;
+    margin-bottom: 5px;
+    padding: 0 30px;
+}
+
+.cardz__text {
+    font-family: Manrope;
+    font-weight: 500;
+    opacity: 0.8;
+    color: #323556;
+    font-size: 12px;
+    line-height: 152%;
+    padding: 0 40px 15px 40px;
+    text-align: center;
+}
+
+.cardz__more {
+    cursor: pointer;
+    font-family: Manrope;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 152%;
+    text-align: center;
+    width: 245px;
+    height: 35px;
+    border: 0.723101px solid #EE8564;
+    box-sizing: border-box;
+    border-radius: 3.61551px;
+    color: rgba(254, 127, 94, 1);
+    background: rgba(255, 255, 255, 0) url(../img/2/arrow_orange.svg) calc(100% - 40px) center no-repeat;
+    margin: 15px auto 35px auto;
+    text-align: center;
+}
+
+.cardz__more:hover {
+    background: #EE8564 url(../img/2/arrow_white.svg) calc(100% - 40px) center no-repeat;
+    color: #FFFFFF;
+}
+
+.activationz__more {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 40px;
+}
+
+.activationz__more_btn {
+    cursor: pointer;
+    font-family: Manrope;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 152%;
+    text-align: center;
+    width: 268px;
+    height: 50px;
+    border: 1px solid #EE8564;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: #FE7F5E;
+    background-color: #FFFFFF;
+}
+
+.activationz__more_btn:hover {
+    background: #EE8564;
+    color: #FFFFFF;
+}
+
+@media (max-width: 1199px) {
+    .activationz__title {
+        font-size: 12px;
+    }
+
+    .activationz__description {
+        max-width: 100%;
+    }
+
+    .descriptionz__title {
+        font-size: 24px;
+        line-height: 134%;
+    }
+
+    .descriptionz__text {
+        font-size: 12px;
+    }
+
+    .activationz__cards {
+        grid-gap: 20px;
+        grid-auto-flow: row;
+    }
+
+    .cardz__image {
+        margin: 0 auto;
+        padding: 45px 0 25px 0;
+    }
+
+    .cardz__title {
+        line-height: 134%;
+        padding: 0 15px;
+    }
+
+    .cardz__text {
+        padding: 0 15px 15px 15px;
+    }
+
+    .cardz__more {
+        width: 235px;
+        border: 0.69744px solid #EE8564;
+        border-radius: 3.4872px;
+        margin: 10px auto 35px auto;
+    }
+
+    .activationz__more {
+        margin: 5px 0 40px;
+    }
+
+    .activationz__more_btn {
+        font-size: 14px;
+        width: 268px;
+        height: 45px;
+    }
+}
+
+/*------Бонус - баннер-------*/
+
+.bonusz {
+    width: 100%;
+    background-color: #FDF1E1;
+}
+
+.bonusz__card {
+    max-width: 1160px;
+    margin: 20px auto;
+    padding: 0 15px;
+    box-sizing: content-box;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+
+.bonusz__card_image {
+    justify-self: center;
+    align-self: center;
+}
+
+.bonusz__card_image img {
+    max-width: 100%;
+}
+
+.bonusz__card_description {
+    margin-left: 50px;
+}
+
+.bonusz__card_title {
+    font-family: "IBM Plex Serif";
+    font-weight: 700;
+    color: #323556;
+    font-size: 32px;
+    line-height: 152%;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.bonusz__card_text {
+    font-family: Manrope;
+    font-weight: 500;
+    color: #323556;
+    letter-spacing: 1px;
+    font-size: 16px;
+    line-height: 152%;
+}
+
+.bonusz__card_more {
+    cursor: pointer;
+    font-family: Manrope;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 152%;
+    letter-spacing: 1px;
+    text-align: center;
+    border: 1px solid #FE7F5E;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: #FE7F5E;
+    padding: 5px 50px;
+    margin: 30px 0;
+}
+
+.bonusz__card_more:hover {
+    background: #E96238;
+}
+
+@media (max-width: 1199px) {
+
+    .bonusz__card {
+        padding: 0 15px 0 0;
+    }
+
+    .bonusz__card_description {
+        margin-left: 20px;
+    }
+
+    .bonusz__card_title {
+        margin-top: 30px;
+        font-size: 16px;
+    }
+
+    .bonusz__card_text {
+        font-size: 8px;
+        letter-spacing: normal;
+    }
+
+    .bonusz__card_more {
+        font-size: 8px;
+        line-height: 134%;
+        padding: 5px 30px;
+        margin: 20px 0 30px;
+        border-radius: 5px;
+    }
+}
+
+/*------Ритуал - цитата-------*/
+
+.quotez__container {
+    max-width: 1160px;
+    margin: 40px auto;
+    box-sizing: content-box;
+    padding: 0 15px;
+    background-color: rgba(251, 251, 251, 1);
+}
+
+.quotez {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 0.2fr 2fr;
+    border: 1px solid #EE8564;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.quotez__image {
+    margin: 30px 35px;
+    justify-self: end;
+}
+
+.quotez__sign {
+    font-family: "IBM Plex Serif";
+    font-weight: 700;
+    color: #FE7F5E;
+    font-size: 100px;
+    line-height: 134%;
+    margin: 15px 5px 5px 5px;
+}
+
+.quotez__text {
+    margin: 30px 95px 30px 10px;
+    font-family: Manrope;
+    font-weight: 500;
+    opacity: 0.8;
+    color: #323556;
+    font-size: 18px;
+    line-height: 152%;
+    justify-self: start;
+    align-self: center;
+}
+
+@media (max-width: 1199px) {
+
+    .quotez {
+        display: grid;
+        grid-template: 1fr auto / 0.3fr 1.5fr;
+        grid-template-areas: ". foto""quote text";
+        padding: 15px;
+    }
+
+    .quotez__image {
+        grid-area: foto;
+        margin: 15px 35px 10px 35px;
+        justify-self: start;
+    }
+
+    .quotez__image img {
+        max-width: 80%;
+    }
+
+    .quotez__sign {
+        grid-area: quote;
+        justify-self: end;
+        align-self: start;
+        margin: -40px 5px -20px 5px;
+    }
+
+    .quotez__text {
+        grid-area: text;
+        margin: 5px 15px 15px 10px;
+        font-weight: 400;
+        font-size: 12px;
+        align-self: start;
+    }
+}
+
+/*------Материалы к вебинару-------*/
+
+.materialz__container {
+    max-width: 1160px;
+    margin: 40px auto;
+    box-sizing: content-box;
+    padding: 0 15px;
+    background-color: rgba(251, 251, 251, 1);
+}
+
+.materialz__title {
+    font-family: "IBM Plex Serif";
+    font-weight: 700;
+    color: #323556;
+    font-size: 26px;
+    line-height: 152%;
+    margin: 20px 0;
+}
+
+.materialz__table {
+    display: grid;
+    align-items: center;
+}
+
+.tablez__item {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+}
+
+.tablez__item:nth-child(odd) {
+    background-color: #F6F6F6;
+}
+
+.tablez__item_name {
+    margin: 30px 40px;
+    font-family: Manrope;
+    font-weight: 700;
+    opacity: 0.8;
+    color: #323556;
+    font-size: 20px;
+    line-height: 152%;
+    justify-self: start;
+}
+
+.tablez__item_button {
+    cursor: pointer;
+    margin: 25px 40px;
+    background: #EE8564;
+    border-radius: 5px;
+    width: 185px;
+    height: 40px;
+    font-family: Manrope;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    justify-self: end;
+}
+
+.tablez__item_button:hover {
+    background: #E96238;
+}
+
+.tablez__item__image {
+    margin-left: 25px;
+    margin-right: -40px;
+    vertical-align: middle;
+}
+
+@media (max-width: 1199px) {
+
+    .materialz__title {
+        font-size: 22px;
+        line-height: 29px;
+    }
+
+    .tablez__item_name {
+        margin: 25px 10px 25px 25px;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 121%;
+    }
+
+    .tablez__item_button {
+        margin: 25px 20px 25px 10px;
+        width: 135px;
+        height: 25px;
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .tablez__item__image {
+        margin-left: 25px;
+        margin-right: -40px;
+        vertical-align: middle;
+    }
+}
+
+/*------Расписание церемонии-------*/
+
+.timetablez__container {
+    background: #FBFBFB;
+    width: 100%;
+}
+
+.timetablez__content {
+    max-width: 1160px;
+    margin: 40px auto;
+    box-sizing: content-box;
+    padding: 0 15px;
+}
+
+.timetablez__description {
+    margin-top: 70px;
+}
+
+.timetablez__tittle {
+    font-family: "IBM Plex Serif";
+    font-weight: 700;
+    color: #323556;
+    font-size: 40px;
+    line-height: 142.5%;
+    margin-bottom: 5px;
+}
+
+.timetablez__text {
+    font-family: Manrope;
+    font-weight: 500;
+    opacity: 0.8;
+    color: #323556;
+    font-size: 16px;
+    line-height: 152%;
+}
+
+.timetablez__day1 {
+    margin-top: 40px;
+}
+
+.timetablez__day1_title-big, .timetablez__day2_title-big {
+    font-family: "IBM Plex Serif";
+    font-weight: 700;
+    color: #EE8564;
+    font-size: 40px;
+    line-height: 122.5%;
+}
+
+.timetablez__day1_title-small, .timetablez__day2_title-small {
+    display: inline;
+    font-family: Manrope;
+    font-weight: 500;
+    opacity: 0.8;
+    color: rgba(254, 127, 94, 0.71);
+    font-size: 14px;
+    line-height: 152%;
+}
+
+.timetablez__day1_list, .timetablez__day2_list {
+    list-style: disc inside;
+    margin-top: 10px;
+    font-family: Manrope;
+    font-weight: 500;
+    color: #323556;
+    font-size: 16px;
+    line-height: 152%;
+}
+
+.timetablez__day1_list span, .timetablez__day2_list span {
+    font-weight: 700;
+}
+
+.timetablez__day1_list li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.timetablez__day1_list {
+    width: 55%;
+}
+
+.timetablez__day2 {
+    margin-top: 40px;
+}
+
+.timetablez__day2_list {
+    margin-bottom: 70px;
+    width: 90%;
+}
+
+@media (max-width: 1199px) {
+
+    .timetablez__tittle {
+        font-size: 22px;
+        line-height: 29px;
+    }
+
+    .timetablez__text {
+        opacity: 1;
+        color: #5B5D78;
+        font-size: 12px;
+        line-height: 152%;
+    }
+
+    .timetablez__day1_title-big, .timetablez__day2_title-big {
+        font-size: 24px;
+    }
+
+    .timetablez__day1_title-small, .timetablez__day2_title-small {
+        display: inline;
+        font-size: 12px;
+        float: right;
+    }
+
+    .timetablez__day2_title-small {
+        width: 35%;
+        text-align: end;
+        line-height: 15px;
+    }
+
+    .timetablez__day1_list, .timetablez__day2_list {
+        font-size: 12px;
+    }
+
+    .timetablez__day1_list {
+        width: 100%;
+    }
+
+    .timetablez__day2_list {
+        width: 100%;
+    }
+}
+
+/*------Рекомендации в коридор затмений-------*/
+
+.recomendationz__container {
+    max-width: 1160px;
+    margin: 40px auto;
+    box-sizing: content-box;
+    padding: 0 15px;
+    background-color: rgba(251, 251, 251, 1);
+}
+
+.recomendationz__content {
+    box-sizing: border-box;
+    border: 1px solid #EE8564;
+    border-radius: 5px;
+    padding: 60px 70px;
+}
+
+.recomendationz__title {
+    font-family: "IBM Plex Serif";
+    font-weight: 700;
+    color: #323556;
+    font-size: 26px;
+    line-height: 152%;
+    margin-bottom: 10px;
+}
+
+.recomendationz__text {
+    font-family: Manrope;
+    font-weight: 500;
+    color: #323556;
+    font-size: 16px;
+    line-height: 152%;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+.recomendationz__go {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.recomendationz__go_btn {
+    cursor: pointer;
+    width: 275px;
+    height: 40px;
+    font-family: Manrope;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 152%;
+    text-align: center;
+    border: 1px solid #EE8564;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #EE8564;
+    padding: 5px 50px;
+}
+
+.recomendationz__go_btn:hover {
+    background: #E96238;
+}
+
+@media (max-width: 1199px) {
+
+    .recomendationz__content {
+        padding: 20px 35px;
+    }
+
+    .recomendationz__title {
+        font-size: 24px;
+        line-height: 31px;
+    }
+
+    .recomendationz__text {
+        color: #5B5D78;
+        font-size: 12px;
+        line-height: 152%;
+    }
+
+    .recomendationz__go {
+        margin-top: 20px;
+        min-height: 40px;
+    }
+
+    .recomendationz__go_btn {
+        padding: 5px 20px;
+    }
+}
+
+/*------Консультации - 14 лет-------*/
+
+.consultationz__container {
+    max-width: 1160px;
+    margin: 40px auto;
+    box-sizing: content-box;
+    padding: 0 15px;
+    background-color: rgba(251, 251, 251, 1);
+}
+
+.consultationz__title {
+    font-family: Manrope;
+    font-weight: 700;
+    color: #EE8564;
+    font-size: 24px;
+    line-height: 152%;
+    opacity: 0.8;
+    margin-bottom: 25px;
+    width: 65%;
+}
+
+.consultationz__description {
+    display: grid;
+    grid-template: 1fr / 0.8fr 0.2fr;
+}
+
+.consultationz__text {
+    font-family: Manrope;
+    font-weight: 500;
+    color: #323556;
+    font-size: 16px;
+    line-height: 152%;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+.consultationz__number {
+    display: flex;
+    flex-direction: column;
+    margin-left: 75px;
+}
+
+.consultationz__14 {
+    font-family: "IBM Plex Serif";
+    font-weight: 700;
+    color: #EE8564;
+    font-size: 110px;
+    line-height: 152%;
+    margin-bottom: -20px;
+    margin-top: -50px;
+}
+
+.consultationz__14text {
+    font-family: Manrope;
+    font-weight: 600;
+    color: #EE8564;
+    font-size: 16px;
+    line-height: 152%;
+    opacity: 0.8;
+    margin-bottom: 15px;
+    position: relative;
+    align-self: center;
+}
+
+.consultationz__14text:after {
+    content: " ";
+    width: 43px;
+    height: 1px;
+    background-color: #323556;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+}
+
+@media (max-width: 1199px) {
+
+    .consultationz__title {
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .consultationz__description {
+        display: grid;
+        grid-template: 1fr auto / 1fr;
+    }
+
+    .consultationz__text {
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+
+    .consultationz__number {
+        display: flex;
+        flex-direction: row;
+        margin-left: 0px;
+    }
+
+    .consultationz__14 {
+        font-size: 115px;
+        margin-bottom: -20px;
+        margin-top: -50px;
+    }
+
+    .consultationz__14text {
+        font-size: 13px;
+        margin-left: 20px;
+    }
+}
+
+/*------Обучение - категории - 5 и 4-------*/
+
+.educationz__container {
+    max-width: 1160px;
+    margin: 40px auto;
+    box-sizing: content-box;
+    padding: 0 15px;
+    background-color: rgba(251, 251, 251, 1);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    justify-items: center;
+}
+
+.educationz__item {
+    display: grid;
+    grid-template-rows: 1fr minmax(10px, 50%);
+    justify-items: center;
+}
+
+.educationz__image {
+    max-width: 100%;
+}
+
+.educationz__title {
+    text-align: center;
+    font-family: "IBM Plex Serif";
+    font-weight: 700;
+    color: #323556;
+    font-size: 20px;
+    line-height: 152%;
+    padding-top: 5px 0;
+}
+
+@media (max-width: 1199px) {
+
+    .educationz__image {
+        max-width: 80%;
+    }
+
+    .educationz__title {
+        font-size: 14px;
+    }
+}
+
+/*------Школа - кому подойдет-------*/
+
+.schoolz__container {
+    max-width: 1160px;
+    margin: 70px auto;
+    box-sizing: content-box;
+    padding: 0 15px;
+    background-color: rgba(251, 251, 251, 1);
+}
+
+.whoz__title {
+    font-family: "IBM Plex Serif";
+    font-weight: 700;
+    color: #323556;
+    font-size: 26px;
+    line-height: 152%;
+    margin-bottom: 40px;
+}
+
+.whoz__items {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    row-gap: 40px;
+    column-gap: 80px;
+}
+
+.whoz__item {
+    display: grid;
+    grid-template-rows: 120px auto 1fr;
+    justify-items: start;
+}
+
+.whoz__image {
+    max-width: 100%;
+    align-self: center;
+}
+
+.whoz__name {
+    font-family: Manrope;
+    font-weight: 700;
+    color: #323556;
+    font-size: 18px;
+    line-height: 152%;
+    margin-bottom: 5px;
+}
+
+.whoz__text {
+    font-family: Manrope;
+    font-weight: 500;
+    color: #323556;
+    font-size: 16px;
+    line-height: 152%;
+    opacity: 0.8;
+    padding: 5px 0;
+}
+
+@media (max-width: 1199px) {
+    .whoz__title {
+        font-size: 22px;
+        line-height: 29px;
+        margin-bottom: 35px;
+    }
+
+    .whoz__items {
+        display: grid;
+        grid-template: repeat(6, auto) / 1fr;
+        row-gap: 40px;
+        justify-items: start;
+    }
+
+    .whoz__item {
+        display: grid;
+        grid-template: auto 1fr / 100px 1fr;
+        justify-items: start;
+        grid-template-areas: "image name""image text";
+    }
+
+    .whoz__image {
+        grid-area: image;
+        max-width: 100%;
+        align-self: start;
+        padding-right: 25px;
+    }
+
+    .whoz__name {
+        grid-area: name;
+        font-size: 16px;
+    }
+
+    .whoz__text {
+        grid-area: text;
+        font-size: 14px;
+        line-height: 19px;
+    }
+}
+
+/*------Школа - чему научитесь-------*/
+
+.schoolz__container {
+    max-width: 1160px;
+    margin: 70px auto;
+    box-sizing: content-box;
+    padding: 0 15px;
+    background-color: rgba(251, 251, 251, 1);
+}
+
+.knowz__title {
+    font-family: "IBM Plex Serif";
+    font-weight: 700;
+    color: #323556;
+    font-size: 26px;
+    line-height: 152%;
+    padding-bottom: 10px;
+}
+
+.knowz__list {
+    list-style-position: inside;
+}
+
+.knowz__item {
+    font-family: Manrope;
+    font-weight: 500;
+    color: #323556;
+    font-size: 16px;
+    line-height: 152%;
+    opacity: 0.8;
+}
+
+.knowz__item:not(:last-child) {
+    padding-bottom: 15px;
+}
+
+@media (max-width: 1199px) {
+    .knowz__title {
+        font-size: 22px;
+        line-height: 29px;
+        padding-bottom: 5px;
+    }
+
+    .knowz__item {
+        font-size: 12px;
+    }
+}
+
+/*------Школа - тарифы-------*/
+
+.schoolz__container {
+    max-width: 1160px;
+    margin: 70px auto;
+    box-sizing: content-box;
+    padding: 0 15px;
+    background-color: rgba(251, 251, 251, 1);
+}
+
+.tarifz__title {
+    font-family: "IBM Plex Serif";
+    font-weight: 700;
+    color: #323556;
+    font-size: 26px;
+    line-height: 152%;
+    margin-bottom: 40px;
+}
+
+.tarifz__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+}
+
+.tarifz__item {
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #FDF1E1;
+}
+
+.tarifz__name {
+    padding: 8px 0;
+    font-family: Manrope;
+    font-weight: 600;
+    color: #FFFFFF;
+    font-size: 22px;
+    line-height: 152%;
+    text-align: center;
+    background-color: #323556;
+}
+
+.tarifz__info, .tarifz__additional {
+    padding: 25px;
+    font-family: Manrope;
+    font-weight: 500;
+    color: #323556;
+    font-size: 14px;
+    line-height: 152%;
+    opacity: 0.8;
+}
+
+.tarifz__info li:not(:last-child) {
+    padding-bottom: 15px;
+}
+
+.tarifz__additional li:not(:last-child) {
+    padding-bottom: 15px;
+}
+
+.tarifz__info ul, .tarifz__additional ul {
+    list-style-type: none;
+}
+
+.tarifz__info span, .tarifz__additional span {
+    font-weight: 700;
+}
+
+.tarifz__access {
+    background-color: #F9E5CA;
+    padding: 15px 25px;
+    font-family: Manrope;
+    font-weight: 700;
+    color: #323556;
+    font-size: 14px;
+    line-height: 19px;
+    opacity: 0.8;
+}
+
+.tarifz__price {
+    margin-top: 20px;
+    padding: 0 25px 5px 25px;
+    font-family: Manrope;
+    font-weight: 500;
+    color: #323556;
+    font-size: 14px;
+    line-height: 19px;
+    opacity: 0.8;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.tarifz__price_number {
+    font-family: Manrope;
+    font-weight: 800;
+    color: #323556;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: end;
+}
+
+.tarifz__credit {
+    padding: 5px 25px 0 25px;
+    margin-bottom: 40px;
+    font-family: Manrope;
+    font-weight: 500;
+    color: #323556;
+    font-size: 14px;
+    line-height: 19px;
+    opacity: 0.8;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.tarifz__credit_number {
+    text-align: end;
+}
+
+.tarifz__more {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.tarifz__button {
+    cursor: pointer;
+    width: 225px;
+    height: 40px;
+    font-family: Manrope;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 152%;
+    text-align: center;
+    border: 1px solid #EE8564;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #EE8564;
+    padding: 8px 40px 12px 40px;
+}
+
+.tarifz__button:hover {
+    background: #E96238;
+}
+
+@media (max-width: 1199px) {
+
+    .tarifz__title {
+        font-size: 22px;
+        line-height: 29px;
+        margin-bottom: 20px;
+    }
+
+    .tarifz__items {
+        display: grid;
+        grid-template: auto auto auto / 1fr;
+        row-gap: 40px;
+    }
+
+    .tarifz__name {
+        font-size: 21.21px;
+    }
+
+    .tarifz__info, .tarifz__additional {
+        padding: 25px 22px;
+        font-size: 13.49px;
+        line-height: 152%;
+    }
+
+    .tarifz__access {
+        padding: 15px 22px;
+        font-size: 13.49px;
+        line-height: 18px;
+    }
+
+    .tarifz__price {
+        margin-top: 20px;
+        padding: 0 22px 5px 22px;
+        font-size: 13.49px;
+        line-height: 18px;
+    }
+
+    .tarifz__price_number {
+        font-size: 21.21px;
+        line-height: 29px;
+    }
+
+    .tarifz__credit {
+        padding: 5px 22px 0 22px;
+        font-size: 13.49px;
+        line-height: 18px;
+    }
+
+    .tarifz__button {
+        width: 217px;
+        font-size: 13.49px;
+        border: 0.963889px solid #EE8564;
+        border-radius: 4.81944px;
+    }
+}
+
+/*------Школа - как проходит-------*/
+
+.schoolz__container {
+    max-width: 1160px;
+    margin: 70px auto;
+    box-sizing: content-box;
+    padding: 0 15px;
+    background-color: rgba(251, 251, 251, 1);
+}
+
+.howz__title {
+    font-family: "IBM Plex Serif";
+    font-weight: 700;
+    color: #323556;
+    font-size: 26px;
+    line-height: 152%;
+    margin-bottom: 20px;
+}
+
+.howz__items {
+    display: grid;
+    grid-template: auto auto auto / 1fr 1fr;
+    row-gap: 25px;
+    column-gap: 170px;
+}
+
+.howz__item_name {
+    font-family: Manrope;
+    font-weight: 700;
+    color: #EE8564;
+    font-size: 20px;
+    line-height: 152%;
+    padding-bottom: 5px;
+}
+
+.howz__item_text {
+    font-family: Manrope;
+    font-weight: 500;
+    color: #323556;
+    opacity: 0.8;
+    font-size: 16px;
+    line-height: 152%;
+}
+
+@media (max-width: 1199px) {
+
+    .howz__title {
+        font-size: 22px;
+        line-height: 29px;
+    }
+
+    .howz__items {
+        display: grid;
+        grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr;
+        row-gap: 20px;
+    }
+
+    .howz__item_name {
+        font-size: 16px;
+    }
+
+    .howz__item_text {
+        font-size: 14px;
+        line-height: 19px;
+    }
+}
+
+/*------Школа - преподаватель-------*/
+
+.schoolz__container {
+    max-width: 1160px;
+    margin: 70px auto;
+    box-sizing: content-box;
+    padding: 0 15px;
+    background-color: rgba(251, 251, 251, 1);
+}
+
+.teacherz__container {
+    display: grid;
+    grid-template: auto auto auto / 1fr 1.5fr;
+    grid-template-areas: "image title""image name""image text";
+    column-gap: 40px;
+}
+
+.teacherz__image {
+    max-width: 100%;
+    grid-area: image;
+}
+
+.teacherz__title {
+    font-family: Manrope;
+    font-weight: 700;
+    color: #FE7F5E;
+    font-size: 16px;
+    line-height: 152%;
+    padding-bottom: 10px;
+    grid-area: title;
+}
+
+.teacherz__name {
+    font-family: "IBM Plex Serif";
+    font-weight: 700;
+    color: #323556;
+    font-size: 26px;
+    line-height: 152%;
+    margin-bottom: 25px;
+    grid-area: name;
+}
+
+.teacherz__text_container {
+    grid-area: text;
+}
+
+.teacherz__text {
+    font-family: Manrope;
+    font-weight: 500;
+    color: #323556;
+    font-size: 16px;
+    line-height: 152%;
+    opacity: 0.8;
+}
+
+.teacherz__text:not(:last-child) {
+    padding-bottom: 20px;
+}
+
+@media (max-width: 1199px) {
+    .teacherz__container {
+        display: grid;
+        grid-template: auto auto auto auto / 1fr;
+        grid-template-areas: "title""name""image""text";
+        column-gap: 40px;
+    }
+
+    .teacherz__title {
+        font-size: 12px;
+    }
+
+    .teacherz__name {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .teacherz__image {
+        margin-bottom: 20px;
+    }
+
+    .teacherz__text {
+        font-size: 12px;
+    }
+}
+
+/*------Школа - вопросы-------*/
+
+.schoolz__container {
+    max-width: 1160px;
+    margin: 70px auto;
+    box-sizing: content-box;
+    padding: 0 15px;
+    background-color: rgba(251, 251, 251, 1);
+}
+
+.questionz__container {
+    display: grid;
+    grid-template-columns: 0.8fr 2fr;
+    column-gap: 70px;
+}
+
+.questionz__title {
+    font-family: "IBM Plex Serif";
+    font-weight: 700;
+    color: #323556;
+    font-size: 40px;
+    line-height: 135.5%;
+}
+
+.questionz__items {
+    display: grid;
+    grid-auto-flow: row;
+}
+
+.questionz__item {
+    display: grid;
+    grid-template: auto auto / 1fr 80px;
+    grid-template-areas: "question plus""answer .";
+}
+
+.questionz__item:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+    padding-bottom: 30px;
+}
+
+.questionz__item:not(:first-child) {
+    padding-top: 35px;
+}
+
+.questionz__name {
+    font-family: Manrope;
+    font-weight: 700;
+    color: #323556;
+    font-size: 16px;
+    line-height: 152%;
+    grid-area: question;
+}
+
+.questionz__text {
+    font-family: Manrope;
+    font-weight: 500;
+    color: #323556;
+    font-size: 16px;
+    line-height: 152%;
+    opacity: 0.8;
+    grid-area: answer;
+    display: none;
+}
+
+.questionz__plus {
+    cursor: pointer;
+    width: 34px;
+    height: 34px;
+    background-color: #EE8564;
+    border: 2px solid #EE8564;
+    box-sizing: border-box;
+    border-radius: 50%;
+    grid-area: plus;
+    justify-self: end;
+    align-self: center;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+
+.questionz__plus.active {
+    background-color: #FFFFFF;
+}
+
+.questionz__plus.active:before {
+    background-color: #EE8564;
+}
+
+.questionz__plus.active:after {
+    display: none;
+}
+
+.questionz__plus:before, .questionz__plus:after {
+    content: " ";
+    width: 17px;
+    height: 2px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 14px;
+    left: 7px;
+    transition: all 0.3s ease 0s;
+}
+
+.questionz__plus:after {
+    transform: rotate(90deg);
+}
+
+@media (max-width: 1199px) {
+    .questionz__container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .questionz__title {
+        font-size: 24px;
+        line-height: 31px;
+        padding-bottom: 30px;
+        width: 90%;
+    }
+
+    .questionz__item {
+        display: grid;
+        grid-template: auto auto / 1fr 50px;
+        grid-template-areas: "question plus""answer .";
+    }
+
+    .questionz__item:not(:first-child) {
+        padding-top: 30px;
+    }
+
+    .questionz__name {
+        grid-area: question;
+        padding-bottom: 5px;
+    }
+
+    .questionz__text {
+        font-size: 12px;
+        grid-area: answer;
+    }
+
+    .questionz__plus {
+        grid-area: plus;
+    }
+}
